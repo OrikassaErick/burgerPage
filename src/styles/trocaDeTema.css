@@ -1,0 +1,50 @@
+
+body{
+    background-color: #fff9ea;
+    transition: .6s;
+}
+.trilho{
+    width: 35px;
+    height: 15px;
+    background-color: #c3c3c3;
+    border-radius: 15px;
+    position: relative; /*serve para que o indicador fique apenas dentro do tamanho da div*/
+    cursor: pointer;
+}
+.trilho .indicador{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);/*serve para o ítem ir um pouco "para"*/
+    position: absolute;
+    left: 0;
+    transition: .6s;
+}
+.trilho.dark{
+    background-color: #4d4d4d;
+}
+.trilho.dark .indicador{
+    left: 20px;
+    background-color: #000;    
+}
+body.dark{
+    background-color: #303030;
+}
+body.dark .nav-item a {
+    color: #fff9ea;
+} 
+body.dark #mobile-btn{
+    color: #fff9ea;
+}
+body.dark #cta .tittle{
+    color: #fff9ea;
+}
+body.dark #cta .description{
+    color: #fff9ea;    
+}
+
+
+
+
+
