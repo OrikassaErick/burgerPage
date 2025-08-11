@@ -43,6 +43,28 @@ body.dark #cta .tittle{
 body.dark #cta .description{
     color: #fff9ea;    
 }
+body.dark #menu .content-menu .section-title{
+      color: #fff9ea;   
+}
+body.dark #menu .content-menu .section-subtitle{
+      color: #fff9ea;   
+}
+body.dark #menu .content-menu #burgers .burger .burger-heart{
+      color: #fff9ea;   
+}
+body.dark #menu .content-menu #burgers .burger .burger-title{
+      color: #fff9ea;   
+}
+body.dark #menu .content-menu #burgers .burger .burger-description{
+      color: #fff9ea;   
+}
+body.dark #menu .content-menu #burgers .burger .burger-rate{
+      color: #fff9ea;   
+}
+body.dark #menu .content-menu #burgers .burger .burger-price{
+      color: #fff9ea;   
+}
+
 
 
 
