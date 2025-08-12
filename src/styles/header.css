@@ -33,9 +33,7 @@ header{
     color: #bda24f;
     transition: border-bottom 0.2s ease-in-out;
 }
-.nav-item.active a:hover {
-    border-bottom: 2px solid #ffe100;
-}
+
 .nav-item-mobile a {
     text-decoration: none;
     color: #1d1d1dad;
