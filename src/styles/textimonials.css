@@ -28,6 +28,7 @@
     margin-bottom: 40px;
 }
 .feedback{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -44,4 +45,36 @@
 .feedback-content p {
     display: flex;
     justify-content: space-between;
+}
+.feedback-content i{
+    color:#e9a209;
+}
+
+@media screen and (max-width: 1170px){
+    #testimonials{
+        flex-direction: column;
+    }
+    #testimonials .section-subtitle{
+        text-align: center;
+    }
+    #testimonial-chapeiro{
+        display: none;
+    }
+    #testimonials-content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .feedback{
+        flex-direction: column;
+    }
+    #testimonials .section-subtitle{
+        font-size: 2rem;
+    }
+    #testimonials-content{
+        width: 90%;
+    }
 }

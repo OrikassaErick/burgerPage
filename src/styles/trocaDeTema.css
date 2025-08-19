@@ -72,6 +72,21 @@ body.dark #testimonials #testimonials-content #feedbacks .feedback{
     background-color: #212121;
     color: #fff9ea;
 }
+body.dark footer{
+    background-color: #212121;
+    min-height: 140px;
+}
+body.dark #footer-image{
+    display: none;
+}
+body.dark #copyright{
+    margin-top: 76px;
+    color: #fff9ea;
+}
+body.dark #social-media-buttons-footer{
+    margin-top: 78px;
+}
+
 
 
 
