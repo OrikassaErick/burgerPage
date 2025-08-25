@@ -29,10 +29,10 @@
     overflow: hidden;
 }
 #burgers :hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 #burgers :active{
-    transform: scale(0.9);
+    transform: scale(0.99);
 }
 .burger-heart{
     position: absolute;

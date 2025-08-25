@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../imagens/favicon.ico">
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/redirect.js"></script>
+    <script src="../javascript/trocaDeTema.js"></script>
+    <script src="../javascript/mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <title>Pedidos</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav-logo">Pao & Brasa</i>
+
+            <ul id="nav-list">
+                <li class="nav-item active">
+                    <a href="../index.html#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <div class="trilho">
+                <div class="indicador"></div>
+            </div>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div id="mobile-nav-list">
+            <ul id="nav-list">
+                <li class="nav-item-mobile">
+                    <a href="../index.html#home">Início</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="../index.html#testimonials">Avaliações</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="menu">
+            <div class="content-menu">
+                <h2 class="section-title">Cardápio</h2>
+                <h3 class="section-subtitle">Entradas</h3>
+
+                <div id="burgers">
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/frangoFritoCrocante.png" id="burguer-image-bacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Frango Frito Crocante
+                        </h3>
+
+                        <span class="burger-description">
+                            Deliciosos pedaços de frango empanados e fritos até ficarem dourados e crocantes, perfeitos para compartilhar.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 27,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/cogumelosFritos.png" id="burguer-image-cheddar" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Cogumelos Fritos
+                        </h3>
+
+                        <span class="burger-description">
+                            Cogumelos empanados em massa leve e fritos até a crocância ideal, saborosos e suculentos por dentro.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 24,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/vinagreteDeAbacaxi.png" id="burguer-image-classicBacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Vinagrete de Abacaxi
+                        </h3>
+
+                        <span class="burger-description">
+                            Um toque tropical no clássico vinagrete, com cubos de abacaxi trazendo frescor e leve doçura.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 14,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/miniHamburgueres.png" id="burguer-image-guacamole" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Mini-Hambúrgueres
+                        </h3>
+
+                        <span class="burger-description">
+                            Pequenos hambúrgueres no pão macio, recheados com carne suculenta e queijo derretido.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 29,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/queijosVariados.png" id="burguer-image-jalapeno" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                           Queijos Variados
+                        </h3>
+
+                        <span class="burger-description">
+                           Seleção especial de queijos nacionais e importados, servidos em cortes elegantes.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 69,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/pasteizinhosAssados.png" id="burguer-image-mushroom" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Pasteizinhos Assados
+                        </h3>
+
+                        <span class="burger-description">
+                            Mini pastéis assados, dourados e recheados com combinações irresistíveis.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 21,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/miniSalgados.png" id="burguer-image-onion" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Mini Salgados
+                        </h3>
+
+                        <span class="burger-description">
+                            Clássicos da mesa brasileira em versão mini, ideais para petiscar.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 19,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/miniTorradascomTomateEManjericao.png" id="burguer-image-smoky" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Mini Torradas com Tomate e Manjericão
+                        </h3>
+
+                        <span class="burger-description">
+                            Mini torradas crocantes cobertas com tomate fresco temperado e toque de manjericão.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 18,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="section-subtitle" style="margin-top: 30px;">Hambúrgueres</h3>
+
+                <div id="burgers">
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/bacon.png" id="burguer-image-bacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Bacon & Tomato Smash
+                        </h3>
+
+                        <span class="burger-description">
+                            Hambúrguer suculento com cheddar derretido, fatias de bacon crocante, tomate fresco e alface crocante no pão brioche.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 54,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/cheddar.png" id="burguer-image-cheddar" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Cheddar Ketchup Classic
+                        </h3>
+
+                        <span class="burger-description">
+                            Hambúrguer grelhado com cheddar, ketchup e alface crocante no pão brioche.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 52,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/classicBacon.png" id="burguer-image-classicBacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Classic Bacon Cheddar
+                        </h3>
+
+                        <span class="burger-description">
+                            O clássico irresistível: hambúrguer grelhado com cheddar, bacon crocante e alface.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 56,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/guacamole.png" id="burguer-image-guacamole" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Guacamole Fiesta
+                        </h3>
+
+                        <span class="burger-description">
+                            Carne saborosa com cheddar, guacamole cremoso, cebola roxa marinada e alface fresca.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 62,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/jalapeno.png" id="burguer-image-jalapeno" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                           Jalapeño Fire Melt 
+                        </h3>
+
+                        <span class="burger-description">
+                           Carne suculenta coberta com queijo derretido, jalapeños frescos e alface em pão com gergelim.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 60,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/mushroom.png" id="burguer-image-mushroom" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Mushroom Swiss Deluxe 
+                        </h3>
+
+                        <span class="burger-description">
+                            Carne suculenta com queijo suíço derretido, cogumelos salteados e alface.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 68,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/onion.png" id="burguer-image-onion" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Onion Crunch Burger
+                        </h3>
+
+                        <span class="burger-description">
+                            Carne grelhada com cheddar, anéis de cebola empanados e alface fresca no pão macio.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 64,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/smoky.png" id="burguer-image-smoky" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Smoky Bacon Swiss
+                        </h3>
+
+                        <span class="burger-description">
+                            Hambúrguer com queijo suíço, bacon defumado, alho fatiado e alface no brioche dourado.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 66,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle" style="margin-top:30px;">Acompanhamentos</h3>
+
+                <div id="burgers">
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/onionRingsCrocantes.png" id="burguer-image-bacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Onion Rings Crocantes
+                        </h3>
+
+                        <span class="burger-description">
+                            Anéis de cebola empanados e fritos até ficarem dourados e sequinhos.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 24,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/batataFrita.png" id="burguer-image-cheddar" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Batata Frita Clássica
+                        </h3>
+
+                        <span class="burger-description">
+                            Cortadas fininhas, crocantes por fora e macias por dentro.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 19,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/palitosDeQueijoEmpanados.png" id="burguer-image-classicBacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Palitos de Queijo Empanados
+                        </h3>
+
+                        <span class="burger-description">
+                            Queijo derretido por dentro, crocante por fora, servido quentinho.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 29,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/molhoBarbecueDefumado.png" id="burguer-image-guacamole" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Molho Barbecue Defumado
+                        </h3>
+
+                        <span class="burger-description">
+                            Molho agridoce com toque de defumado, perfeito para acompanhar frituras e carnes.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 14,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/molhoCheddarCremoso.png" id="burguer-image-jalapeno" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                           Molho Cheddar Cremoso
+                        </h3>
+
+                        <span class="burger-description">
+                           Cremoso e intenso, feito com queijo cheddar derretido na medida certa.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 14,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/brocolisNoVapor.png" id="burguer-image-mushroom" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Brócolis no Vapor
+                        </h3>
+
+                        <span class="burger-description">
+                            Leve e nutritivo, servido no ponto certo para manter sabor e crocância.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 17,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/saladaColeslaw.png" id="burguer-image-onion" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Salada Coleslaw
+                        </h3>
+
+                        <span class="burger-description">
+                            Clássica salada americana de repolho e cenoura, cremosa e refrescante.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 17,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/batatasRusticasDouradas.png" id="burguer-image-smoky" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Batatas Rústicas Temperadas
+                        </h3>
+
+                        <span class="burger-description">
+                            Batatas em gomos, assadas e temperadas com especiarias.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 24,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle" style="margin-top:30px;">Bebidas</h3>
+
+                <div id="burgers">
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/cafeGeladoEspresso.png" id="burguer-image-bacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Café Gelado Espresso
+                        </h3>
+
+                        <span class="burger-description">
+                            Refrescante e intenso, preparado com espresso forte servido sobre gelo.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 14,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/latteGelado.png" id="burguer-image-cheddar" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Latte Gelado
+                        </h3>
+
+                        <span class="burger-description">
+                            Combinação suave de café espresso, leite gelado e gelo, perfeito para dias quentes.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 19,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/pinaColada.png" id="burguer-image-classicBacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Piña Colada (sem álcool)
+                        </h3>
+
+                        <span class="burger-description">
+                            Cremosa mistura tropical de abacaxi e coco, finalizada com fruta fresca.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 29,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/sucoNaturalDeLaranja.png" id="burguer-image-guacamole" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Suco Natural de Laranja
+                        </h3>
+
+                        <span class="burger-description">
+                            Espremido na hora, fresco e cheio de vitamina C.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 11,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/sangriaDeFrutas.png" id="burguer-image-jalapeno" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                           Sangria de Frutas (sem álcool)
+                        </h3>
+
+                        <span class="burger-description">
+                           Refrescante combinação de frutas cítricas com suco de uva e um toque gaseificado.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 24,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/cafeLatteQuente.png" id="burguer-image-mushroom" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Café Latte Quente
+                        </h3>
+
+                        <span class="burger-description">
+                            Espresso encorpado suavizado com leite vaporizado e espuma cremosa.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 17,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/mojitoClássico.png" id="burguer-image-onion" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Mojito Clássico (sem álcool)
+                        </h3>
+
+                        <span class="burger-description">
+                            Refresco cubano de limão, hortelã e gelo triturado, ideal para energizar.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 27,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/capuccinoTradicional.png" id="burguer-image-smoky" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Capuccino Tradicional
+                        </h3>
+
+                        <span class="burger-description">
+                            Espresso equilibrado com leite vaporizado e espuma cremosa, polvilhado com canela.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 19,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle" style="margin-top: 30px;">Sobremesas</h3>
+
+                <div id="burgers">
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/tarteleteDeFrutasVermelhas.png" id="burguer-image-bacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Tartelete de Frutas Vermelhas
+                        </h3>
+
+                        <span class="burger-description">
+                            Uma base crocante de massa amanteigada, recheada com creme leve e finalizada com frutas frescas e brilho doce.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 35,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/donutClassicoGlaceado.png" id="burguer-image-cheddar" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Donut Clássico Glaceado
+                        </h3>
+
+                        <span class="burger-description">
+                            Fofinho e dourado, esse clássico donut traz a simplicidade irresistível da confeitaria americana.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 20,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/boloDeCenouraComCreamCheese.png" id="burguer-image-classicBacon" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Bolo de Cenoura com Cream Cheese
+                        </h3>
+
+                        <span class="burger-description">
+                            Camadas úmidas de bolo de cenoura com especiarias, cobertas por um cremoso e aveludado cream cheese.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 29,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/boloDeChocolateClássico.png" id="burguer-image-guacamole" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Bolo de Chocolate Clássico
+                        </h3>
+
+                        <span class="burger-description">
+                            Um bolo de chocolate rico e intenso, com camadas generosas de recheio e cobertura cremosa.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 34,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/tortaDeMacaClassica.png" id="burguer-image-jalapeno" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                           Torta de Noz-Pecã com Maçã Caramelizada
+                        </h3>
+
+                        <span class="burger-description">
+                           Crosta amanteigada recheada com maçãs macias caramelizadas e coberta por nozes-pecã crocantes.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 44,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/casquinhaDeSorveteDeBaunilha.png" id="burguer-image-mushroom" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Casquinha de Sorvete de Baunilha
+                        </h3>
+
+                        <span class="burger-description">
+                            Sorvete cremoso de baunilha servido em uma crocante casquinha artesanal.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 24,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/boloMousseDeChocolate.png" id="burguer-image-onion" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Bolo Mousse de Chocolate
+                        </h3>
+
+                        <span class="burger-description">
+                            Camadas de bolo macio e mousse denso de chocolate, finalizado com cobertura brilhante.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 39,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="burger">
+                        <div class="burger-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <img src="../imagens/tortaDeMacaClassica.png" id="burguer-image-smoky" class="burguer-image" alt="">
+
+                        <h3 class="burger-title">
+                            Torta de Maçã Clássica
+                        </h3>
+
+                        <span class="burger-description">
+                            Receita tradicional, com maçãs levemente caramelizadas em especiarias, envolvidas por uma massa dourada e crocante.
+                        </span>
+
+                        <div class="burger-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="burger-price">
+                            <h4>R$ 35,99</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+                
+    </section>
+
+        <footer>
+            <img src="../imagens/wave.svg" id="footer-image" alt="">
+            <div id="footer-items">
+                <span id="copyright">
+                    &copy 2025
+                </span>
+                <div class="social-media-buttons">
+                    <a id="social-media-buttons-footer" href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a id="social-media-buttons-footer" href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a id="social-media-buttons-footer" href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+
+</html>
