@@ -7,5 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function clicar(){
     trilho.classList.toggle('dark')
     body.classList.toggle('dark')
-    }  
+    } 
 })
+
+
+

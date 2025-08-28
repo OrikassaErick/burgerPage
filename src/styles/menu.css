@@ -5,7 +5,7 @@
     justify-content: center;
     min-height: 100vh;
 }
-#burgers{    
+#starters, #burgers, #sideDishs, #drinks, #desserts{    
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,7 +15,29 @@
     transition: transform 0.2s ease;
     cursor: pointer;
 }
-.burger{
+#options-menu{
+    list-style: none;
+    cursor: pointer;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+}
+.section-subtitle-menu{
+    font-size: 17px;
+}
+.section-subtitle-menu a{
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+    transition: border-bottom 0.2s ease-in-out;
+}
+.section-subtitle-menu :hover{
+    border-bottom: 2px solid #ffe100;
+}
+.starter, .burger, .sideDish, .drink, .dessert{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,13 +50,7 @@
     position: relative;
     overflow: hidden;
 }
-#burgers :hover{
-    transform: scale(1.02);
-}
-#burgers :active{
-    transform: scale(0.99);
-}
-.burger-heart{
+.starter-heart, .burger-heart, .sideDish-heart, .drink-heart, .dessert-heart{
     position: absolute;
     background-color: #e9a209;
     display: flex;
@@ -48,34 +64,67 @@
     top: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
 }
-.burguer-image{
+.starter-title, .burger-title, .sideDish-title, .drink-title, .dessert-title{
+    text-align: center;
+}
+.starter-image, .burguer-image, .sideDish-image, .drink-image, .dessert-image{
     width: 230px;
     height: 230px;
     border-radius: 7px;
 }
-.burger-description{
+.starter-description, .burger-description, .sideDish-description, .drink-description, .dessert-description{
     color: #1d1d1d;
     text-align: center;
 }
-.burger-rate i {
+.starter-rate i, .burger-rate i, .sideDish-rate i, .drink-rate i, .dessert-rate i{
     color: #e9a209;
 }
-.burger-price{
+.starter-price, .burger-price, .sideDish-price, .drink-price, .desserte-price{
     display: flex;
     align-items: center;
     gap: 20px;
 }
+#starters :hover{
+    transform: scale(1.02);
+}
+#starters :active{
+    transform: scale(0.99);
+}
+#burgers :hover{
+    transform: scale(1.02);
+}
+#burgers :active{
+    transform: scale(0.99);
+}
+#sideDishs :hover{
+    transform: scale(1.02);
+}
+#sideDishs :active{
+    transform: scale(0.99);
+}
+#drinks :hover{
+    transform: scale(1.02);
+}
+#drinks :active{
+    transform: scale(0.99);
+}
+#desserts :hover{
+    transform: scale(1.02);
+}
+#desserts :active{
+    transform: scale(0.99);
+}
 @media screen and (max-width: 1170px){
-    #burgers{
+    #starters, #burgers, #sideDishs, #drinks, #desserts{
         flex-wrap: wrap;
         justify-content: center;
     }
-    .burger{
+    .starter, .burger, .sideDish, .drink, .dessert{
         width: calc(50% - 12px);
     }
 }
 @media screen and (max-width: 600px){
-    .burger{
+    .starter, .burger, .sideDish, .drink, .dessert{
         width: 100%;
     }
 }

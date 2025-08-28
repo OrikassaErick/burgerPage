@@ -1,6 +1,5 @@
 
 header{
-
     top: 0;
     width: 100%;
     padding: 28px 8%;
@@ -35,7 +34,6 @@ header{
     color: #bda24f;
     transition: border-bottom 0.2s ease-in-out;
 }
-
 .nav-item-mobile a {
     text-decoration: none;
     color: #1d1d1dad;
