@@ -114,6 +114,13 @@
 #desserts :active{
     transform: scale(0.99);
 }
+
+/*MOBILE*/
+
+#section-subtitle-mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1170px){
     #starters, #burgers, #sideDishs, #drinks, #desserts{
         flex-wrap: wrap;
@@ -124,6 +131,15 @@
     }
 }
 @media screen and (max-width: 600px){
+    #options-menu{
+        display: none;
+    }
+    #section-subtitle-mobile{
+        display: block;
+    }
+    .com-mt{
+        margin-top: 25px;
+    }
     .starter, .burger, .sideDish, .drink, .dessert{
         width: 100%;
     }
