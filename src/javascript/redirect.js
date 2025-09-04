@@ -1,10 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const orderBtn = document.querySelector("#order-button");
-    if (orderBtn) {
-        orderBtn.addEventListener("click", () => {
-            location.href = "pages/orderPage.html";
-        });
-    }
 
     const redirect = [
         {id: "bacon", url: "../pages/bacon.html"},
@@ -44,10 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
         {id: "smoky", url: "../pages/smoky.html"},
         {id: "sucoDeLaranja", url: "../pages/sucoDeLaranja.html"},
         {id: "tartelete", url: "../pages/tartelete.html"},
-        {id: "tortaDeMaca", url: "../pages/tortaDeMaca.html"},
+        {id: "tortaDeNoz", url: "../pages/tortaDeNoz.html"},
         {id: "tortaDeMacaClassica", url: "../pages/tortaDeMacaClassica.html"},
         {id: "vinagreteDeAbacaxi", url: "../pages/vinagreteDeAbacaxi.html"},
     ] // Vou usar um array de objetos, pois caso seja necessário adicionar mais alguma informação no futuro, seja possível
+
+    const secondTry = [
+        {id: "bacon", url: "../src/pages/bacon.html"},
+        {id: "cheddar", url: "../src/pages/cheddar.html"},
+        {id: "classicBacon", url: "../src/pages/classicBacon.html"},
+        {id: "guacamole", url: "../src/pages/guacamole.html"},
+        {id: "jalapeno", url: "../src/pages/jalapeno.html"},
+        {id: "mushroom", url: "../src/pages/mushroom.html"}
+    ]
 
     for(let i = 0; i < redirect.length; i++){
 
@@ -56,6 +59,17 @@ document.addEventListener("DOMContentLoaded", () => {
             search.addEventListener("click", () => {
                 location.href = redirect[i].url
             })
+        } else {
+
+            for(let j = 0; j < secondTry.length; j++) {
+
+                const research = document.querySelector(`#${secondTry[j].id}`)
+                if(research){
+                    research.addEventListener("click", () => {
+                        location.href = secondTry[j].url
+                    })
+                }
+            }
         }
     }
 });

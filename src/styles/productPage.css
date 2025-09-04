@@ -1,0 +1,28 @@
+body{
+  overflow-x: hidden;
+}
+#content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 100vh;
+}
+.section-image{
+  width: 40%;
+  min-width: 40%;
+}
+.section-content{
+  width: 60%;
+  min-width: 60%;
+}
+#burger-name{
+  font-size: 23px;
+}
+#burger-description{
+  font-size: 17px;
+}
+#btn-default-product-page{
+  margin-top: 28px;
+}
+

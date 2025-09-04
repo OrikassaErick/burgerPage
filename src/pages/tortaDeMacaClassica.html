@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/productPage.css">
+    <link rel="icon" href="../imagens/favicon.ico" type="">
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/redirect.js"></script>
+    <script src="../javascript/trocaDeTema.js"></script>
+    <script src="../javascript/mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <title>BTorta de Maçã Clássica</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav-logo">Pao & Brasa</i>
+
+            <ul id="nav-list">
+                <li class="nav-item active">
+                    <a href="../index.html#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/orderPage.html#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <div class="trilho">
+                <div class="indicador"></div>
+            </div>
+
+            <button class="btn-default" id="shopping-cart">
+                Carrinho
+                <span id="counter-item">
+                    <p id="counter-number"></p>
+                </span>
+            </button>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div id="mobile-nav-list">
+            <ul id="nav-list">
+                <li class="nav-item-mobile">
+                    <a href="../index.html#home">Início</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="../pages/orderPage.html#menu">Cardápio</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="../index.html#testimonials">Avaliações</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="section-image">
+            <img src="../imagensPNG/tortaDeMacaPNG.png" alt="">
+        </section>
+
+        <section class="section-content">
+            <h1 id="burger-name">Torta de Maçã Clássica</h1>
+            <p id="burger-description">Fatias finas de maçã fresca temperadas com canela, açúcar mascavo e um leve toque de noz-moscada são envoltas por uma massa dourada e amanteigada, assada até liberar um aroma acolhedor que transforma cada fatia em um pedaço de aconchego caseiro.</p>
+
+            <button class="btn-default" id="btn-default-product-page">
+                Adicionar ao carrinho
+            </button>
+        </section>
+    </main>
+    
+    <footer>
+        <img src="../imagens/wave.svg" id="footer-image" alt="">
+        <div id="footer-items">
+            <span id="copyright">
+                &copy 2025
+            </span>
+            <div class="social-media-buttons">
+                <a id="social-media-buttons-footer" href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a id="social-media-buttons-footer" href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a id="social-media-buttons-footer" href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

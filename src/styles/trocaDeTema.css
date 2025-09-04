@@ -113,6 +113,12 @@ body.dark #copyright{
 body.dark #social-media-buttons-footer{
     margin-top: 78px;
 }
+body.dark #burger-name{
+    color: #fff9ea;
+}
+body.dark #burger-description{
+    color: #fff9ea;
+}
 
 
 

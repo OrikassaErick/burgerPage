@@ -67,7 +67,7 @@
 .starter-title, .burger-title, .sideDish-title, .drink-title, .dessert-title{
     text-align: center;
 }
-.starter-image, .burguer-image, .sideDish-image, .drink-image, .dessert-image{
+.starter-image, .burger-image, .sideDish-image, .drink-image, .dessert-image{
     width: 230px;
     height: 230px;
     border-radius: 7px;
@@ -79,40 +79,16 @@
 .starter-rate i, .burger-rate i, .sideDish-rate i, .drink-rate i, .dessert-rate i{
     color: #e9a209;
 }
-.starter-price, .burger-price, .sideDish-price, .drink-price, .desserte-price{
+.starter-price, .burger-price, .sideDish-price, .drink-price, .dessert-price{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-#starters :hover{
-    transform: scale(1.02);
+.starter:hover, .burger:hover, .sideDish:hover, .drink:hover, .dessert:hover {
+  transform: scale(1.02);
 }
-#starters :active{
-    transform: scale(0.99);
-}
-#burgers :hover{
-    transform: scale(1.02);
-}
-#burgers :active{
-    transform: scale(0.99);
-}
-#sideDishs :hover{
-    transform: scale(1.02);
-}
-#sideDishs :active{
-    transform: scale(0.99);
-}
-#drinks :hover{
-    transform: scale(1.02);
-}
-#drinks :active{
-    transform: scale(0.99);
-}
-#desserts :hover{
-    transform: scale(1.02);
-}
-#desserts :active{
-    transform: scale(0.99);
+.starter:active, .burger:active, .sideDish:active, .drink:active, .dessert:active {
+  transform: scale(0.99);
 }
 
 /*MOBILE*/

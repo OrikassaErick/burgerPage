@@ -36,8 +36,11 @@
                 <div class="indicador"></div>
             </div>
 
-            <button class="btn-default" id="order-button">
-                Peça aqui
+            <button class="btn-default" id="shopping-cart">
+                Carrinho
+                <span id="counter-item">
+                    <p id="counter-number"></p>
+                </span>
             </button>
 
             <button id="mobile-btn">
@@ -71,7 +74,7 @@
                     Na Pao & Brasa, transformamos o clássico lanche em uma experiência gourmet. Utilizamos ingredientes selecionados, pães artesanais, carnes nobres e molhos exclusivos preparados na casa.
                 </p>
                 <div id="cta-buttons">
-                    <a href="#" class="btn-default">
+                    <a href="../src/pages/orderPage.html#menu" class="btn-default">
                         ver cardápio
                     </a>
                     <a href="tel:+5519997329163" id="phone-button">
@@ -103,12 +106,12 @@
                 <h3 class="section-subtitle">Lanches mais pedidos</h3>
 
                 <div id="burgers">
-                    <div class="burger">
+                    <div class="burger" id="bacon">
                         <div class="burger-heart">
                             <i class="fa-solid fa-heart"></i>
                         </div>
 
-                        <img src="imagens/bacon.png" id="burguer-image-bacon" class="burguer-image" alt="">
+                        <img src="imagens/bacon.png" id="burger-image-bacon" class="burger-image" alt="">
 
                         <h3 class="burger-title">
                             Bacon & Tomato Smash
@@ -133,14 +136,13 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-
                     </div>
-                    <div class="burger">
+                    <div class="burger" id="cheddar">
                         <div class="burger-heart">
                             <i class="fa-solid fa-heart"></i>
                         </div>
 
-                        <img src="imagens/cheddar.png" id="burguer-image-cheddar" class="burguer-image" alt="">
+                        <img src="imagens/cheddar.png" id="burger-image-cheddar" class="burger-image" alt="">
 
                         <h3 class="burger-title">
                             Cheddar Ketchup Classic
@@ -165,14 +167,13 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-
                     </div>
-                    <div class="burger">
+                    <div class="burger" id="classicBacon">
                         <div class="burger-heart">
                             <i class="fa-solid fa-heart"></i>
                         </div>
 
-                        <img src="imagens/classicBacon.png" id="burguer-image-classicBacon" class="burguer-image" alt="">
+                        <img src="imagens/classicBacon.png" id="burger-image-classicBacon" class="burger-image" alt="">
 
                         <h3 class="burger-title">
                             Classic Bacon Cheddar
@@ -197,14 +198,13 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-
                     </div>
-                    <div class="burger">
+                    <div class="burger" id="guacamole">
                         <div class="burger-heart">
                             <i class="fa-solid fa-heart"></i>
                         </div>
 
-                        <img src="imagens/guacamole.png" id="burguer-image-guacamole" class="burguer-image" alt="">
+                        <img src="imagens/guacamole.png" id="burger-image-guacamole" class="burger-image" alt="">
 
                         <h3 class="burger-title">
                             Guacamole Fiesta
@@ -229,14 +229,13 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-
                     </div>
-                    <div class="burger">
+                    <div class="burger" id="jalapeno">
                         <div class="burger-heart">
                             <i class="fa-solid fa-heart"></i>
                         </div>
 
-                        <img src="imagens/jalapeno.png" id="burguer-image-jalapeno" class="burguer-image" alt="">
+                        <img src="imagens/jalapeno.png" id="burger-image-jalapeno" class="burger-image" alt="">
 
                         <h3 class="burger-title">
                            Jalapeño Fire Melt 
@@ -261,14 +260,13 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-
                     </div>
-                    <div class="burger">
+                    <div class="burger" id="mushroom">
                         <div class="burger-heart">
                             <i class="fa-solid fa-heart"></i>
                         </div>
 
-                        <img src="imagens/mushroom.png" id="burguer-image-mushroom" class="burguer-image" alt="">
+                        <img src="imagens/mushroom.png" id="burger-image-mushroom" class="burger-image" alt="">
 
                         <h3 class="burger-title">
                             Mushroom Swiss Deluxe 
@@ -289,70 +287,6 @@
 
                         <div class="burger-price">
                             <h4>R$ 68,90</h4>
-                            <button class="btn-default">
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                    <div class="burger">
-                        <div class="burger-heart">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <img src="imagens/onion.png" id="burguer-image-onion" class="burguer-image" alt="">
-
-                        <h3 class="burger-title">
-                            Onion Crunch Burger
-                        </h3>
-
-                        <span class="burger-description">
-                            Carne grelhada com cheddar, anéis de cebola empanados e alface fresca no pão macio.
-                        </span>
-
-                        <div class="burger-rate">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(500+)</span>
-                        </div>
-
-                        <div class="burger-price">
-                            <h4>R$ 64,90</h4>
-                            <button class="btn-default">
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                    <div class="burger">
-                        <div class="burger-heart">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <img src="imagens/smoky.png" id="burguer-image-smoky" class="burguer-image" alt="">
-
-                        <h3 class="burger-title">
-                            Smoky Bacon Swiss
-                        </h3>
-
-                        <span class="burger-description">
-                            Hambúrguer com queijo suíço, bacon defumado, alho fatiado e alface no brioche dourado.
-                        </span>
-
-                        <div class="burger-rate">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(500+)</span>
-                        </div>
-
-                        <div class="burger-price">
-                            <h4>R$ 66,90</h4>
                             <button class="btn-default">
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
